@@ -11,7 +11,7 @@
   <script src="https://kit.fontawesome.com/bc9f75cc29.js" crossorigin="anonymous"></script>
 
   <!-- Style CSS -->
-  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/events.css">
 
   <title>Naija Yellow Catalogue | Events</title>
 
@@ -20,7 +20,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt="Naija Yellow Catalogue Logo"></a>
+        <a class="navbar-brand" href="#"><img src="../assets/img/logo.png" alt="Naija Yellow Catalogue Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,17 +29,17 @@
         <div class=" nav-flex collapse navbar-collapse" id="navbarNav">
             <div class="nav-item-1 mr-auto">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="./contents/about.html">About us</a></li>
-                    <li><a href="./contents/pricing.html">Pricing</a></li>
-                    <li><a href="./contents/contact-us.html">Contact</a></li>
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="./about.html">About us</a></li>
+                    <li><a href="./pricing.html">Pricing</a></li>
+                    <li><a href="./contact-us.html">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-item-2">
                 <ul>
                     <li><a href="./contents/login.html">Sign-in</a></li>
                     <li><a href="./contents/sign-up.html">Register</a></li>
-                    <li><a href="./contents/sign-up.html" class="add-btn">+ Add Listings</a></li>
+                    <li><a href="./sign-up.html" class="add-btn">+ Add Listings</a></li>
                 </ul>
             </div>
         </div>
@@ -53,42 +53,35 @@
 
         <div class="box-headers">
           <div class="first">
-            <h5> Yellow Pages</h5>
+            <a href ="../index.html" ><h5>Yellow Pages</h5></a>
           </div>
           <div class="second">
-            <a href ="./contents/event.html" ><h5>Events</h5></a>
+            <h5> Events</h5>
           </div>
         </div>
 
         <div class="main-box">
           <div class="box-contents">
             <div class="input-icon">
-              <i class="fas fa-book-open"></i>
-                <input type="text" name="whoweknow" id = "weknow" placeholder="We know" required>
-                <select id = "select1" required>
-                  <option value="" disabled selected hidden>Category</option>
-                  <option>Real Estate/Property</option>
-                  <option>Beauty & Fashion</option>
-                  <option>Technology & Development</option>
-                  <option>Catering & Decoration</option>
-                  <option>Agriculture</option>
-                  <option>Restaurant & Food</option>
-                  <option>Construction and Renovation</option>
-                  <option>Transportation</option>
-                  <option>News & Media</option>
-                  <option>Health and Fitness</option>
-                  <option>Education & Schools</option>
-                  <option>Electronics</option>
-                </select>
-                <select id = "select2" required>
-                  <option value="" disabled selected hidden>Location</option>
-                  <option>Abuja</option>
-                  <option>Kaduna</option>
-                  <option>Lagos</option>
-                  <option>Kano</option>
-                  <option>Jos</option>
+              <i class="fas fa-search"></i>
+              <input type="text" name="whoweknow" placeholder="Search happenings near you" required>
+              <select required>
+                <option value="" disabled selected hidden>Category</option>
+                <option>Real Estate/Property</option>
+                <option>Beauty & Fashion</option>
+                <option>Technology & Development</option>
+                <option>Catering & Decoration</option>
+                <option>Agriculture</option>
+                <option>Resturant & Food</option>
+                <option>Construction and Renovation</option>
+                <option>Transportation</option>
+                <option>News & Media</option>
+                <option>Health and Fitness</option>
+                <option>Education & Schools</option>
+                <option>Electronics</option>
               </select>
-                <button onclick = "checker()" class="search-btn">Search</button>
+              <input type="date" class="cat" name="date">
+              <button class="search-btn">Find</button>
             </div>
           </div>
         </div>
@@ -105,7 +98,7 @@
         <div class="card-deck">
           <!-- Card One -->
           <div class="card">
-            <img src="./assets/img/property.jpg" class="card-img-top" alt="Real Estate / Property">
+            <img src="../assets/img/property.jpg" class="card-img-top" alt="Real Estate / Property">
             <div class="card-body">
               <h5 class="card-title">Real Estate & Property</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -117,7 +110,7 @@
           </div>
           <!-- Card Two -->
           <div class="card">
-            <img src="./assets/img/catering.jpg" class="card-img-top" alt="Catering">
+            <img src="../assets/img/catering.jpg" class="card-img-top" alt="Catering">
             <div class="card-body">
               <h5 class="card-title">Catering & Decorations</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -128,7 +121,7 @@
           </div>
           <!-- Card Three -->
           <div class="card">
-            <img src="./assets/img/construction.jpg" class="card-img-top" alt="Construction">
+            <img src="../assets/img/construction.jpg" class="card-img-top" alt="Construction">
             <div class="card-body">
               <h5 class="card-title">Construction and Renovation</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -139,7 +132,7 @@
           </div>
           <!-- Card Four -->
           <div class="card">
-            <img src="./assets/img/health.jpg" class="card-img-top" alt="Health">
+            <img src="../assets/img/health.jpg" class="card-img-top" alt="Health">
             <div class="card-body">
               <h5 class="card-title">Health & Fitness</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -153,7 +146,7 @@
         <div class="card-deck">
           <!-- Card Five -->
           <div class="card">
-            <img src="./assets/img/fashion.jpg" class="card-img-top" alt="Fashion">
+            <img src="../assets/img/fashion.jpg" class="card-img-top" alt="Fashion">
             <div class="card-body">
               <h5 class="card-title">Fashion & Beauty</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -164,7 +157,7 @@
           </div>
           <!-- Card Six -->
           <div class="card">
-            <img src="./assets/img/electronics.jpg" class="card-img-top" alt="Electronics">
+            <img src="../assets/img/electronics.jpg" class="card-img-top" alt="Electronics">
             <div class="card-body">
               <h5 class="card-title">Electronics & Repair</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -175,7 +168,7 @@
           </div>
           <!-- Card Seven -->
           <div class="card">
-            <img src="./assets/img/media.jpg" class="card-img-top" alt="Media">
+            <img src="../assets/img/media.jpg" class="card-img-top" alt="Media">
             <div class="card-body">
               <h5 class="card-title">News & Media</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -186,7 +179,7 @@
           </div>
           <!-- Card Eight -->
           <div class="card">
-            <img src="./assets/img/agriculture.jpg" class="card-img-top" alt="Agriculture">
+            <img src="../assets/img/agriculture.jpg" class="card-img-top" alt="Agriculture">
             <div class="card-body">
               <h5 class="card-title">Agriculture</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -200,7 +193,7 @@
         <div class="card-deck">
           <!-- Card Nine -->
           <div class="card">
-            <img src="./assets/img/travel.jpg" class="card-img-top" alt="Transportation">
+            <img src="../assets/img/travel.jpg" class="card-img-top" alt="Transportation">
             <div class="card-body">
               <h5 class="card-title">Transportation</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -212,7 +205,7 @@
           </div>
           <!-- Card Ten -->
           <div class="card">
-            <img src="./assets/img/education.jpg" class="card-img-top" alt="Education">
+            <img src="../assets/img/education.jpg" class="card-img-top" alt="Education">
             <div class="card-body">
               <h5 class="card-title">Education</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -225,7 +218,7 @@
           </div>
           <!-- Card Eleven -->
           <div class="card">
-            <img src="./assets/img/technology.jpg" class="card-img-top" alt="Technology">
+            <img src="../assets/img/technology.jpg" class="card-img-top" alt="Technology">
             <div class="card-body">
               <h5 class="card-title">Technology</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -236,7 +229,7 @@
           </div>
           <!-- Card Twelve -->
           <div class="card">
-            <img src="./assets/img/food.jpg" class="card-img-top" alt="Resturant">
+            <img src="../assets/img/food.jpg" class="card-img-top" alt="Resturant">
             <div class="card-body">
               <h5 class="card-title">Resturant</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -256,7 +249,7 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-container">
-        <img src="./assets/img/logo.png" alt="The Footer Image">
+        <img src="../assets/img/logo.png" alt="The Footer Image">
         <div class="row">
             <div class="footer-logo">
                 <div class="about-us">
@@ -321,26 +314,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-
-  <script>
-    function checker(){
-
-      let name = document.getElementById("weknow").value;
-      let category = document.getElementById("select1").value;
-      let location = document.getElementById("select2").value;
-
-      if ( name.length == 0 && category.length == 0 && location.length== 0){
-        alert("You need to input search details")
-      }
-      else{
-
-      }
-    }
-
-  </script>
-
-
-
 </body>
 
 </html>

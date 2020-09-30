@@ -1,28 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Ubuntu&display=swap');
 
-/* font-family: 'Beth Ellen', cursive;
-font-family: 'Ubuntu', sans-serif; */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height:100vh;
-  margin: 0;
-  font-family: 'Ubuntu', sans-serif;
-  line-height: auto;
-  overflow-x: hidden;
-}
-
-button::-moz-focus-inner, 
-input[type="button"]::-moz-focus-inner, 
-input[type="submit"]::-moz-focus-inner, 
-input[type="reset"]::-moz-focus-inner {
-  padding: 0;
-  border: 0 none;
+/* RESET */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar Styling */
@@ -107,88 +92,112 @@ nav .nav-item-2 .add-btn:hover {
   color: #ffffff;
 } 
 
-        /* contact Us */
-        
-        .contact-us {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: #fff;
-            opacity: 0.9;
-            padding-top: 2rem;
-        }
-        
-        .contact-us h2 {
-            font-size: 3rem;
-            text-transform: uppercase;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        
-        .contact-container {
-            display: block;
-            padding-bottom: 12px;
-            font-family: 'Ubuntu', sans-serif;
-        }
-        
-        label {
-            margin-bottom: 10px;
-            padding: 12px;
-            font-size: 1rem;
-            /* color: #EBBA32!important; */
-            font-weight: bold;
-        }
-        
-        .contact-container input,
-        textarea {
-            width: 25rem;
-            /* border-bottom-style: double; */
-            border-top-style: none;
-            border-right-style: none;
-            border-left-style: none;
-            border-bottom-style: groove;
-            border-width: 2px;
-            /* height: 12px; */
-            margin-bottom: 8px;
-            padding: 8px;
-        }
-        
-        .contact-us .contact-container button {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            width: 100px;
-            margin-left: 70px;
-            margin: auto;
-            margin-bottom: 2rem;
-            padding: 8px 12px;
-            align-self: center;
-            border-radius: 8px;
-            transition: all 2s ease-in-out;
-            background: rgba(0, 0, 0, 0.96);
-            color: #fff;
-            font-weight: 700px;
-            box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.96);
-            margin-top: 15px;
-        }
-        
-        .contact-us .contact-container button:hover {
-            transform: scale(0.9);
-            color: #EBBA32;
-        }
-        
-        .contact-container input:focus,
-        textarea:focus {
-            outline: none;
-            background: black;
-            color: white;
-            border: #EBBA32 2px solid;
-            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.96);
-        }
+/* Pricing Table */
 
-        
- 
+.title{
+    display: grid;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.title h3{
+    font-family: 'Beth Ellen', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.title p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+.pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1400px, 80%);
+    margin: 2rem 8rem;
+}
+
+.pricing-card {
+    flex: 1;
+    max-width: 360px;
+    background-color: #EBBA32;
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #2e2e2e;
+    transition: .3s linear;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.pricing-card-header {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    display: inline-block;
+    color: #EBBA32;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s linear;
+}
+
+.pricing-card:hover .pricing-card-header {
+    box-shadow: 0 0 0 26em black;
+}
+
+.price {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: black;
+    margin: 20px 0;
+    transition: .2s linear;
+}
+
+.price sup,
+.price span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.pricing-card:hover,
+.pricing-card:hover .price {
+    color: #EBBA32;
+}
+
+.pricing-card li {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.order-btn {
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s linear;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.order-btn:hover {
+    background-color: black;
+    color: #ffe4c4;
+}
+
+
 /* FOOTER STYLING */
 footer {
   background: #111111;
@@ -276,6 +285,97 @@ footer {
 }
 
 
+/* Desktop Size*/
+@media (max-width:1024px) {
+  nav .navbar-brand img {
+    max-width: 220px;
+    max-height: 220px;
+    top: 15px;  
+    margin-right: 70px;
+  }
+
+    /* NAVBAR */
+  .nav-flex {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  nav .nav-item-1 a {
+    position: relative;
+    top: 10px;
+    color: #ffffff;
+    padding: 0 20px;
+    font-size: 13px;
+    margin: 15px auto;
+    text-decoration: none;
+ }
+
+  nav .nav-item-2 li a {
+    font-size: 13px;
+    padding: 0 20px;
+  }
+
+  nav .nav-item-2 .add-btn {
+  position: relative;
+  top: 10px;
+  background: #EBBA32;
+  padding: 10px 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  }
+
+  nav .nav-item-2 .add-btn:hover {
+  color: #ffffff;
+  }
+
+    /* FOOTER */
+
+  footer{
+  position: fixed;
+  }
+  
+  .footer-container {
+    margin: auto;
+    max-width: 98%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .footer-container img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .footer-container h3 {
+    font-size: 17px;
+  }
+
+  .row .about-us p {
+    font-size: 13px;
+  }
+
+  .row .quick a {
+    font-size: 13px;
+  }
+
+  .newsletter input {
+    max-width: 60%;
+    margin: 5px 5px;
+    padding: 5px;
+  }
+
+  .follow-us span i {
+    font-size: 17px;
+  }
+
+  .follow-us p {
+    font-size: 13px;
+  }
+}
+
+
+
+
 /* Responsiveness*/
 /* Larger Desktop Size*/
 @media (max-width:1440px) {
@@ -350,6 +450,12 @@ footer {
 
   nav .nav-item-2 .add-btn:hover {
   color: #ffffff;
+  }
+
+  /* Pricing Table Styling */
+  .pricing-table {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
   }
 
     /* FOOTER */
@@ -427,47 +533,9 @@ footer {
   }
 }
 
-        /* mobile responsiveness */
-        
-        @media (max-width:600px) {
-            .contact-container {
-                display: block;
-                padding-bottom: 12px;
-            }
-            label {
-                margin-bottom: 7px;
-                padding: 8 12px;
-                color: #EBBA32!important;
-            }
-            .contact-us h2 {
-                font-size: 2.5rem;
-            }
-            .contact-container input,
-            textarea {
-                width: 100%;
-                /* border-bottom-style: double; */
-                margin: auto;
-                padding: 6px;
-            }
-            .contact-us .contact-container button {
-                text-align: center!important;
-                width: 100px;
-                margin-top: .8rem;
-                display: flex;
-                justify-content: center;
-                /* margin-left: 40px; */
-            }
-        }
 
 /* Mobile Size*/
 @media (max-width:425px) {
-  .main-content h3 {
-    font-family: 'Beth Ellen', cursive;
-    color: #FFFFFF;
-    font-size: 30px;
-    margin: 15px 0;
-  }
-
     /* FOOTER */
   .footer-container .row {
     display: grid;
@@ -527,4 +595,10 @@ footer {
   color: #000000;
   margin: auto;
 }
-}         
+} 
+
+@media screen and (max-width:110px) {
+    .pricing-card {
+        flex: 50%;
+    }
+}

@@ -253,15 +253,20 @@ button:active{
     transform:scale(1.1);
 }
 
+
 .box-headers{
-    display:flex;
-    flex-direction: row;
-    margin: 0 1rem;
-    align-items: flex-end;
-    padding: 0 10px;
-    right: 300px;
+  display:flex;
+  flex-direction: row;
+  margin: 0 1rem;
+  align-items: flex-end;
+  padding: 0 10px;
+  right: 300px;
 }
 
+.first .second h5{
+    font-size: 15px;
+    
+}
 .first{
     background-color: rgba(190,157,14, 0.5);
     padding: 15px;
@@ -269,10 +274,6 @@ button:active{
     color: #ffffff;
 }
 
-.first .second h5{
-    font-size: 15px;
-    
-}
 
 .second{
     background-color: #bb8a03;
