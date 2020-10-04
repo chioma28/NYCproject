@@ -11,10 +11,9 @@
         <script src="https://kit.fontawesome.com/bc9f75cc29.js" crossorigin="anonymous"></script>
       
         <!-- Style CSS -->
+        <link rel="stylesheet" href="../assets/css/forgot.css">
         <link rel="stylesheet" href="../assets/css/index.css">
-        <link rel="stylesheet" href="../assets/css/login.css">
-      
-        <title>Naija Yellow Catalogue | Sign-in</title>
+        <title>Naija Yellow Catalogue | Forgot Password</title>
       
       </head>
       
@@ -30,15 +29,15 @@
               <div class=" nav-flex collapse navbar-collapse" id="navbarNav">
                   <div class="nav-item-1 mr-auto">
                       <ul>
-                          <li><a href="../index.html">Home</a></li>
-                          <li><a href="../contents/about.html">About us</a></li>
-                          <li><a href="../contents/pricing.html">Pricing</a></li>
-                          <li><a href="../contents/contact-us.html">Contact</a></li>
+                          <li><a href="../index.html" >Home</a></li>
+                          <li><a href="./contents/about.html">About us</a></li>
+                          <li><a href="./contents/pricing.html">Pricing</a></li>
+                          <li><a href="./contents/contact-us.html">Contact</a></li>
                       </ul>
                   </div>
                   <div class="nav-item-2">
                       <ul>
-                          <li><a href="#" class="active">Sign-in</a></li>
+                          <li><a href="./login.html" class="active">Sign-in</a></li>
                           <li><a href="./contents/sign-up.html">Register</a></li>
                           <li><a href="./contents/sign-up.html" class="add-btn">+ Add Listings</a></li>
                       </ul>
@@ -47,42 +46,26 @@
           </nav>
       </header>
 
-    <!-- Login Section -->
-    <section id="login-container">
-
-        <div class="login-wrapper">
-            <!-- Login Details Section -->
-            <div class="login-details">
-                <p id="heading">Login to Your Account!</p>
-                <button class="google-btn">Login with Google</button>
-                <span class="or">-OR-</span>
-                <button class="twitter-btn">Login with Twitter</button>
-                
-                <br> <br>
-                <form name="login" netlify class="login-form">
-                    <p>
-                        <label>Email Address <br><br><input type="email" name="email" /></label>
-                    </p>
-                    <p>
-                        <label>Password<br><br> <input type="password" name="password" /></label>
-                    </p>
-                    <p>
-                        <input type="radio" name="remember" /><label class="dark-color">&nbsp;Remember Me</label>
-                        <a href="../contents/forgot.html" class="light-color none">Forgot Password</a>
-                        <p>
-                            <button type="submit">Login To Your Account</button>
-                        </p>
-                </form>
-                <p class="light-color signup">Don't have an account ?&nbsp;<a href="./sign-up.html" class="dark-color none"><strong><b>Sign Up</b></strong></a></p> <br> <br>
-
+    <!-- main body -->
+    <section class="forgot-section">
+        <div class="forgot-case">
+            
+            <div class="image_case">
+                <img src="../assets/img/forgotArt.png" alt="forgot image">
             </div>
-            <!-- Login Image Section -->
-            <div class="login-image">
-                <img src="../assets/img/login-girl.jpg" alt="login image">
+            <div class="form_case">
+                <p class="first-text">Forgot Password</p> 
+                <p class="s-text">Seems like you forgot your password, we'll send a recovery link to your email</p>
+                <div class="input-icon">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Email" required ></div>
+                    <!-- <a href="../contents/reset.html"> </a>-->
+                        <button class="send-link"  type="submit" onclick="validateEmail()">Send Recovery Link</button>
+                </div>     
             </div>
         </div>
+        
     </section>
-
 
     <!-- FOOTER -->
   <footer>
@@ -153,8 +136,8 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
 
-    <script src="../assets/js/login.js"></script>
 
+    <script src="../assets/js/forgot.js"></script>
+    
 </body>
-
 </html>
